@@ -105,14 +105,14 @@ Attributes of Architectural Elements
       * last part of the feature tree
       * keyword describing the content of the requirement.
 
-   The naming convention is defined here: :need:`SCORE_doc__naming_conventions`
+   The naming convention is defined here: `REPLACE_doc__naming_conventions`
 
 .. gd_req:: Architecture attribute: security
    :id: gd_req__arch_attr_security
    :status: valid
    :tags: attribute, mandatory
 
-   Each requirement shall have a security relevance identifier:
+   Each architectural element shall have a security relevance identifier:
 
       * Yes
       * No
@@ -123,7 +123,7 @@ Attributes of Architectural Elements
    :tags: attribute, mandatory
    :complies: std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
-   Each requirement shall have a automotive safety integrity level (ASIL) identifier:
+   Each architectural element shall have a automotive safety integrity level (ASIL) identifier:
 
       * QM
       * ASIL_B
@@ -135,7 +135,7 @@ Attributes of Architectural Elements
    :tags: attribute, mandatory
    :complies: std_req__iso26262__support_6425
 
-   Each requirement shall have a status:
+   Each architectural element shall have a status:
 
       * valid
       * invalid
