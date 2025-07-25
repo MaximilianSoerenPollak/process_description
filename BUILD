@@ -43,6 +43,7 @@ copyright_checker(
             "MODULE.bazel",
         ],
         exclude = ["process/trustable/**"],
+        allow_empty = True
     ),
     config = "@score_cr_checker//resources:config",
     template = "@score_cr_checker//resources:templates",
