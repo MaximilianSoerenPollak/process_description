@@ -11,24 +11,24 @@
 # SPDX-License-Identifier: Apache-2.0
 # *******************************************************************************
 
-load("@aspect_rules_py//py:defs.bzl", "py_library")
-load("@score_docs_as_code//:docs.bzl", "docs")
-
-# Creates all documentation targets:
-# - `process:incremental` for building docs incrementally at runtime
-# - `process:live_preview` for live preview in the browser without an IDE
-# - `process:ide_support` for creating python virtualenv for IDE support
-# - `process:docs` for building documentation at build-time
-
-docs(
-    conf_dir = "process",  # Where 'conf.py' is
-    docs_targets = [
-        {
-            "suffix": "latest",  # latest main branch documentation build
-        },
-    ],
-    source_dir = "process",  # Where the RST files are located
-    source_files_to_scan_for_needs_links = [
-        # Note: you can add filegroups, globs, or entire targets here.
-    ],
-)
+# load("@aspect_rules_py//py:defs.bzl", "py_library")
+# load("@score_docs_as_code//:docs.bzl", "docs")
+#
+# # Creates all documentation targets:
+# # - `process:incremental` for building docs incrementally at runtime
+# # - `process:live_preview` for live preview in the browser without an IDE
+# # - `process:ide_support` for creating python virtualenv for IDE support
+# # - `process:docs` for building documentation at build-time
+#
+# docs(
+#     conf_dir = "process",  # Where 'conf.py' is
+#     docs_targets = [
+#         {
+#             "suffix": "latest",  # latest main branch documentation build
+#         },
+#     ],
+#     source_dir = "process",  # Where the RST files are located
+#     source_files_to_scan_for_needs_links = [
+#         # Note: you can add filegroups, globs, or entire targets here.
+#     ],
+# )
