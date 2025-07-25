@@ -101,16 +101,19 @@ Based on the inputs of the previous chapter the types of requirements which need
 Stakeholder Requirements
 ========================
 
-On the platform level the *Stakeholder (=customer) Requirements* are defined. These requirements describe which content the platform needs to contain, and serve as a project description of the top-level functionality. An example could be e.g.
+On the platform level the *Stakeholder (=customer) Requirements* are defined. These requirements describe which content (functionality and safety mechanisms) the platform needs to contain, and serve as a project description of the top-level functionality. An example could be e.g.
 
 .. code-block:: text
 
    The platform shall support configuration of applications via files (e.g. yaml, json)
 
+Note that the *Stakeholder Requirements* represent the assumed technical safety requirements for the platform SEooC,
+i.e. the assumption on what content is needed, which shall be matched by the user to their expectations.
+
 Feature Requirements
 ====================
 
-The *Feature Requirements* addresses mainly the integration level of SW modules and components. These shall describe the behavior of the feature on platform level shall be described including the correlations of the integrated components. They serves mainly as an input for (SW + Safety) Architects, Testers, Integrators and are derived from the *Stakeholder Requirements*. To provide an example
+The *Feature Requirements* derived from stakeholder requirements address mainly the integration level of SW modules and components. These shall describe the behavior of the feature on platform level shall be described including the correlations of the integrated components. They serves mainly as an input for (SW + Safety) Architects, Testers, Integrators and are derived from the *Stakeholder Requirements*. To provide an example
 
 .. code-block:: text
 
@@ -174,11 +177,13 @@ Following attributes need to be filled manually for each requirement:
        For *Stakeholder Requirements* a rationale which provides some more background infos shall be provided.
        For any other requirement the reasoning can be deduced from the top level requirement.
    * - Safety
-     - This attribute describes the impact of the requirement on functional safety. Currently only following values are defined [QM, ASIL_B, ASIL_D]. Other values are not required at the moment as *ASIL decomposition* is not used so far.
+     - This attribute describes the impact of the requirement on functional safety. Currently only following values are defined [QM, ASIL_B]. Other values are not required at the moment as *ASIL decomposition* is not used so far.
    * - Security
      - This attribute describes if the requirement has any impact on security of the platform.
    * - Requirements Type
      - The requirement type defines which category the requirement relates to. Following categories are defined: [Functional, Interface, Process, Legal, Non-Functional]
+
+Following attributes are automatically generated:
 
 .. list-table:: Automated Attributes
    :header-rows: 1

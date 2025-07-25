@@ -19,8 +19,8 @@ Safety Analysis : FMEA
 .. document:: [Your Feature Name] FMEA
    :id: doc__feature_name_fmea
    :status: draft
-   :safety: ASIL_D
-   :realizes: wp__sw_feature_safety_analysis
+   :safety: ASIL_B
+   :realizes: wp__feature_safety_analysis
    :tags: template
 
 .. attention::

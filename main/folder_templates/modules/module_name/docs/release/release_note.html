@@ -39,10 +39,10 @@
     <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -424,6 +424,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../component_name/docs/index.html">[Your Component Name]</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/index.html">Tools</a></li>
 </ul>
 </div>
 </nav></div>
@@ -496,7 +497,7 @@
 <p class="admonition-title">Note</p>
 <p>Document header</p>
 </div>
-<div class="need_container docutils container" id="SNCB-6732f546">
+<div class="need_container docutils container" id="SNCB-5d28e57a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__module_name_release_note">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -506,7 +507,7 @@
 <td class="head_center" colspan="2"><div class="needs_head line-block">
 <div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_D</span></span></span></div>
+<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
 </div>
 </td>
 <td class="head_right" colspan="2"><div class="needs_head_right line-block">
@@ -517,10 +518,10 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">template</span></span></span></div>
-<div class="line"><span class="needs_realizes"><span class="needs_label">realizes: </span><span class="needs_data">wp__module_sw_release_note</span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_D</span></span></div>
+<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 </span></span></div>
-<div class="line"><span></span></div>
+<div class="line"><span><div class="line">realizes: <span class="realizes"><span><a class="reference internal" href="../../../../../process_areas/release_management/release_workproducts.html#wp__module_sw_release_note" title="doc__module_name_release_note">wp__module_sw_release_note</a></span></span></div>
+</span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
@@ -554,14 +555,24 @@
 <div class="line-block">
 <div class="line">Module Name: [Module Name]</div>
 <div class="line">Release Tag: vX.Y.Z</div>
+<div class="line">Origin Release Tag: vU.V.W</div>
 <div class="line">Release Commit Hash: a1b2c3d4e5f6g7h8i9j0</div>
 <div class="line">Release Date: YYYY-MM-DD</div>
 <div class="line"><br /></div>
 <div class="line">Overview</div>
 <div class="line">——–</div>
 <div class="line"><br /></div>
-<div class="line">This document provides an overview of the changes, improvements, and bug fixes included in the software module release version vX.Y.Z.</div>
+<div class="line">This document provides an overview of the changes, improvements, and bug fixes included in the software module release version vX.Y.Z</div>
+<div class="line-block">
+<div class="line">as compared to the module’s origin release (which is usually the previous release).</div>
 <div class="line"><br /></div>
+<div class="line">Disclaimer</div>
+<div class="line">———-</div>
+<div class="line">This release note does not “release for production”, as it does not come with a safety argumentation and a performed safety assessment.</div>
+<div class="line">The work products compiled in the safety package are created with care according to a process satisfying standards, but the S-CORE project,</div>
+<div class="line">being a non-profit and open source organization, can not take over any liability for its content.</div>
+<div class="line"><br /></div>
+</div>
 <div class="line">New Features</div>
 <div class="line">————</div>
 <div class="line"><br /></div>
@@ -588,6 +599,13 @@
 <div class="line"><br /></div>
 <div class="line">- <strong>Dependencies</strong>: List any dependencies and their versions.</div>
 <div class="line"><br /></div>
+<div class="line-block">
+<div class="line">Performed Verification</div>
+<div class="line">———————-</div>
+<div class="line">This release note is based on the verification as documented in module verification report</div>
+<div class="line"><a class="reference internal" href="../verification/module_verification_report.html#doc__module_name_verification_report" title="doc__module_name_verification_report"><em class="xref need">[Your Module Name] Verifica... (doc__module_name_verification_report)</em></a>.</div>
+<div class="line"><br /></div>
+</div>
 <div class="line">Known Issues</div>
 <div class="line">————</div>
 <div class="line"><br /></div>
