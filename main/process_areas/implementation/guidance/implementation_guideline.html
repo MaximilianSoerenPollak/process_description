@@ -32,17 +32,17 @@
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score.css?v=940e959b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/score.css?v=6e51530f" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/score_needs.css?v=e97392eb" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/score_design.css?v=d9fd870c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -53,7 +53,7 @@
 
     <script src="../../../_static/jquery.js?v=5d32c60e"></script>
     <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../_static/documentation_options.js?v=7f41d439"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
@@ -72,8 +72,8 @@
         </script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Implementation Inspection Checklist" href="implementation_checklist.html" />
-    <link rel="prev" title="Guidance" href="index.html" />
+    <link rel="next" title="Process Requirements" href="implementation_process_reqs.html" />
+    <link rel="prev" title="Detailed Design Template" href="detailed_design_template.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
@@ -168,7 +168,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../../index.html">
-    Process Areas
+    Process areas
   </a>
 </li>
 
@@ -203,14 +203,14 @@
 
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../../standards/index.html">
-    Standards
+    Standards & Requirements
   </a>
 </li>
 
 
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../../trustable/index.html">
-    Trustable
+    Trustable Software Framework
   </a>
 </li>
 
@@ -218,6 +218,13 @@
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../../folder_templates/index.html">
     Folder Templates
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../../glossary/index.html">
+    Glossary
   </a>
 </li>
 
@@ -349,7 +356,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../../index.html">
-    Process Areas
+    Process areas
   </a>
 </li>
 
@@ -377,14 +384,14 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../standards/index.html">
-    Standards
+    Standards & Requirements
   </a>
 </li>
 
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../trustable/index.html">
-    Trustable
+    Trustable Software Framework
   </a>
 </li>
 
@@ -392,6 +399,13 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../folder_templates/index.html">
     Folder Templates
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../glossary/index.html">
+    Glossary
   </a>
 </li>
 
@@ -468,30 +482,31 @@
 
 <li class="toctree-l2"><a class="reference internal" href="../implementation_concept.html">Concept Description</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Guidance</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Guideline</a></li>
 <li class="toctree-l3"><a class="reference internal" href="implementation_checklist.html">Implementation Inspection Checklist</a></li>
 <li class="toctree-l3"><a class="reference internal" href="detailed_design_template.html">Detailed Design Template</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Guideline</a></li>
 <li class="toctree-l3"><a class="reference internal" href="implementation_process_reqs.html">Process Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software_development_template.html">Software Development Plan Template</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2"><a class="reference internal" href="../implementation_workflow.html">Workflow Implementation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../implementation_workproducts.html">Workproducts Implementation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../implementation_roles.html">Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../implementation_workflow.html">Implementation Workflows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../implementation_workproducts.html">Implementation Work Products</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_assets/detailed_design_example.html">Example: Detailed Design</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../platform_management/index.html">Platform Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../problem_resolution/index.html">Problem Resolution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../process_management/index.html">Process Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../quality_management/index.html">Quality Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../release_management/index.html">Release Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../requirements_engineering/index.html">Requirements Engineering</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../safety_analysis/index.html">Safety Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../safety_management/index.html">Safety Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../security_analysis/index.html">Security Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../security_management/index.html">Security Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tool_management/index.html">Tool Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../verification/index.html">Verification</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../process_management/index.html">Process Management</a></li>
 </ul>
 </div>
 </nav></div>
@@ -533,7 +548,7 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Process Areas</a></li>
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Process areas</a></li>
     
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Implementation</a></li>
@@ -560,7 +575,7 @@
                   
   <section id="guideline">
 <h1>Guideline<a class="headerlink" href="#guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-4e4a215b">
+<div class="need_container docutils container" id="SNCB-898afc2a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__implementation">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -579,10 +594,10 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">implementation</span></span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">implementation</span><span class="needs_spacer">, </span><span class="needs_data">implementation</span></span></span></div>
 </span></span></div>
-<div class="line"><span></span></div>
+<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_744" title="gd_guidl__implementation">std_req__iso26262__software_744</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_841" title="gd_guidl__implementation">std_req__iso26262__software_841</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_842" title="gd_guidl__implementation">std_req__iso26262__software_842</a>, <a class="reference internal" href="../../../standards/aspice_40/iic/iic-11.html#std_req__aspice_40__iic-11-05" title="gd_guidl__implementation">std_req__aspice_40__iic-11-05</a></span></span></div>
+</span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
@@ -603,23 +618,22 @@
 </table>
 </div>
 </div>
-<p>This document describes the general guidances for implementation based on the concept which is defined <a class="reference internal" href="../implementation_concept.html#doc_concept__imp_concept" title="doc_concept__imp_concept"><em class="xref need">Concept Description</em></a>.
-In the concept is a example of a Detailed Design included.</p>
+<p>This document describes the general guidance for implementation based on the concept which is defined <a class="reference internal" href="../implementation_concept.html#doc_concept__imp_concept" title="doc_concept__imp_concept"><em class="xref need">Concept Description</em></a>.
+The concept includes an example of a Detailed Design.</p>
 <section id="workflow-for-implementation">
 <h2>Workflow for Implementation<a class="headerlink" href="#workflow-for-implementation" title="Link to this heading">#</a></h2>
 <p>Detailed description which steps are need for implementation.</p>
 <ol class="arabic simple">
 <li><p>Consult which programming languages, design/coding guidelines and tools are used for Software
-development within the Software Development Plan <cite>REPLACE_doc__software_development_plan</cite>.</p></li>
+development according the rules given in the project specific <a class="reference internal" href="../implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">SW development Plan (wp__sw_development_plan)</em></a>.</p></li>
 <li><p>Create a Detailed Design by using the template <a class="reference internal" href="detailed_design_template.html#gd_temp__detailed_design" title="gd_temp__detailed_design"><em class="xref need">Detailed Design Templates (gd_temp__detailed_design)</em></a>.
 In this step, the components are broken down into smaller, independent units that can be tested
 separately during the unit testing phase. The detailed design shall be so exact, that test and
 implementation can be run simultaneously.</p></li>
-<li><p>Implement the source code, by using the coding guidelines <cite>REPLACE_doc__cpp_coding_guidelines</cite> for C++,
-or &lt;TBD&gt; for Rust.</p></li>
+<li><p>Implement the source code, by using the coding guidelines given within the project specific <a class="reference internal" href="../implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">SW development Plan (wp__sw_development_plan)</em></a> for the programming languages in your project.</p></li>
 <li><p>Create a pull request for your change.</p></li>
 <li><p>Detail Design and Code Inspection is done to review the code of the software and detect errors in it.</p></li>
-<li><p>Check the results of the static and dynamic code analysis (this inlcludes compiler warnings).</p></li>
+<li><p>Check the results of the static and dynamic code analysis (this includes compiler warnings). Acceptance criteria are defined in the Verification Plan <a class="reference internal" href="../../verification/guidance/verification_plan_template.html#gd_temp__verification_plan" title="gd_temp__verification_plan"><em class="xref need">Platform Verification Plan ... (gd_temp__verification_plan)</em></a>.</p></li>
 <li><p>Fix or justify the errors.</p></li>
 <li><p>Merge the pull request.</p></li>
 <li><p>Create a follow up ticket if not all findings could be fixed.</p></li>
@@ -658,20 +672,20 @@ the static and the dynamic view for unit interactions is described.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="index.html"
+       href="detailed_design_template.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Guidance</p>
+        <p class="prev-next-title">Detailed Design Template</p>
       </div>
     </a>
     <a class="right-next"
-       href="implementation_checklist.html"
+       href="implementation_process_reqs.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Implementation Inspection Checklist</p>
+        <p class="prev-next-title">Process Requirements</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -703,7 +717,7 @@ the static and the dynamic view for unit interactions is described.</p>
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/MaximilianSoerenPollak/process_description/edit/main/docs/process_areas/implementation/guidance/implementation_guideline.rst">
+    <a href="https://github.com/MaximilianSoerenPollak/process_description/edit/main/process/process_areas/implementation/guidance/implementation_guideline.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -714,15 +728,6 @@ the static and the dynamic view for unit interactions is described.</p>
     </a>
   </div>
 </div>
-
-  <div class="sidebar-secondary-item">
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../../../_sources/process_areas/implementation/guidance/implementation_guideline.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div></div>
 
 </div></div>
               
