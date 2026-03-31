@@ -60,7 +60,7 @@ Templates
 
 .. gd_temp:: Tool Requirements Template
    :id: gd_temp__req_tool_req
-   :status: valid
+   :status: valid 
    :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
    .. code-block:: rst
@@ -76,6 +76,7 @@ Templates
 .. gd_temp:: Requirement Formulation Template
    :id: gd_temp__req_formulation
    :status: valid
+   :version: 1
    :complies: std_req__iso26262__support_641, std_req__iso26262__support_6421, std_req__iso26262__support_6425
 
    Requirements shall be specified according to the following schema:
