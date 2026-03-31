@@ -60,6 +60,6 @@ git_override(
 
 git_override(
     module_name = "score_docs_as_code",
-    commit = "21640ab325b3aae147ba4e3e8b5e7ab89fc2e8f5",
-    remote = "https://github.com/etas-contrib/score_docs-as-code.git",
+    commit = "4e5809a1d5cf3fe3c3abd8d23a8de7e13790ec9e",
+    remote = "https://github.com/maximiliansoerenpollak/score_docs-as-code.git",
 )
