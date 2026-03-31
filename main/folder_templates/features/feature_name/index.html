@@ -33,16 +33,16 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/score.css?v=6e51530f" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_needs.css?v=e97392eb" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_needs.css?v=1f5dae2a" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/score_design.css?v=d9fd870c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -477,7 +477,7 @@
 <li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">[Your Feature Name]</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="architecture/index.html">Feature Architecture</a></li>
 <li class="toctree-l3"><a class="reference internal" href="architecture/chklst_arc_inspection.html">Architecture Inspection Checklist</a></li>
-<li class="toctree-l3"><a class="reference internal" href="requirements/index.html">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="requirements/index.html">Feature Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="requirements/chklst_req_inspection.html">Requirement Inspection Checklist</a></li>
 <li class="toctree-l3"><a class="reference internal" href="safety_analysis/fmea.html">FMEA (Failure Modes and Effects Analysis)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="safety_analysis/dfa.html">DFA (Dependent Failure Analysis)</a></li>
@@ -559,7 +559,7 @@
 <p class="admonition-title">Note</p>
 <p>Document header</p>
 </div>
-<div class="need_container docutils container" id="SNCB-dbe4f312">
+<div class="need_container docutils container" id="SNCB-c577fec7">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__feature_name">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -568,7 +568,7 @@
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
 <div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
+<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
 <div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
 </div>
 </td>
@@ -609,7 +609,7 @@
 <li><p>Modify <code class="docutils literal notranslate"><span class="pre">document</span></code> to be your Feature Name</p></li>
 <li><p>Modify <code class="docutils literal notranslate"><span class="pre">id</span></code> to be your Feature Name in upper snake case preceded by <code class="docutils literal notranslate"><span class="pre">doc__</span></code></p></li>
 <li><p>Adjust <code class="docutils literal notranslate"><span class="pre">status</span></code> to be <code class="docutils literal notranslate"><span class="pre">valid</span></code></p></li>
-<li><p>Adjust <code class="docutils literal notranslate"><span class="pre">safety</span></code> and <code class="docutils literal notranslate"><span class="pre">tags</span></code> according to your needs</p></li>
+<li><p>Adjust <code class="docutils literal notranslate"><span class="pre">safety</span></code>, <code class="docutils literal notranslate"><span class="pre">security</span></code> and <code class="docutils literal notranslate"><span class="pre">tags</span></code> according to your needs</p></li>
 </ul>
 </div>
 <section id="feature-flag">
@@ -643,7 +643,7 @@ CRs submissions without sufficient motivation may be rejected.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The rationale should provide evidence of consensus within the community and discuss important objections or concerns raised during discussion.
-For the documentation of the decision the <a class="reference internal" href="../../../process_areas/change_management/guidance/change_management_decision_record_template.html#gd_temp__change_decision_record" title="gd_temp__change_decision_record"><em class="xref need">Decision Record Template (gd_temp__change_decision_record)</em></a> can be used.</p>
+For the documentation of the decision the <a class="reference internal" href="../../../process_areas/change_management/guidance/change_management_decision_record_template.html#gd_temp__change_decision_record" title="gd_temp__change_decision_record"><em class="xref need">Decision Record Template</em></a> can be used.</p>
 </div>
 </section>
 <section id="specification">
@@ -653,7 +653,7 @@ For the documentation of the decision the <a class="reference internal" href="..
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>A CR shall specify the stakeholder requirements as part of our platform/project.
-Thereby the <a class="reference internal" href="../../../roles/index.html#rl__project_lead" title="rl__project_lead"><em class="xref need">Project Lead (rl__project_lead)</em></a> will approve these requirements as part of accepting the CR (e.g. merging the PR with the CR).</p>
+Thereby the <a class="reference internal" href="../../../roles/index.html#rl__project_lead" title="rl__project_lead"><em class="xref need">Project Lead</em></a> will approve these requirements as part of accepting the CR (e.g. merging the PR with the CR).</p>
 </div>
 </section>
 <section id="backwards-compatibility">
@@ -686,7 +686,7 @@ These analyses may not be available at the time of creation of the feature (requ
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If there are safety concerns in relation to the CR, those concerns should be explicitly written out to make sure reviewers of the CR are aware of them.
-Link here to the filled out <a class="reference internal" href="../../../process_areas/change_management/guidance/change_management_impact_analysis_template.html#gd_temp__change_impact_analysis" title="gd_temp__change_impact_analysis"><em class="xref need">Impact Analysis Template (gd_temp__change_impact_analysis)</em></a> or copy the template in this chapter.</p>
+Link here to the filled out <a class="reference internal" href="../../../process_areas/change_management/guidance/change_management_impact_analysis_template.html#gd_temp__change_impact_analysis" title="gd_temp__change_impact_analysis"><em class="xref need">Impact Analysis Template</em></a> or copy the template in this chapter.</p>
 </div>
 <p>Which safety requirements are affected or has to be changed?
 Could the new/modified feature be a potential common cause or cascading failure initiator?
