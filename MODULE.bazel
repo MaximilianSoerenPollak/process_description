@@ -42,3 +42,8 @@ python.toolchain(
 #
 ###############################################################################
 bazel_dep(name = "score_docs_as_code", version = "8.2.0")
+git_override(
+    module_name = "score_docs_as_code",
+    branch = "MSP_testing_testing",
+    remote = "https://github.com/maximiliansoerenpollak/docs-as-code"
+)

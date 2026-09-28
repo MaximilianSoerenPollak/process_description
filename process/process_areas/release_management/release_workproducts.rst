@@ -39,7 +39,7 @@ Release Management Work Products
    :status: valid
    :version: 1
    :tags: doc_lifecycle_model_2
-   :complies: std_wp__iso26262__management_656[version==1], std_req__aspice_40__iic-13-52[version==1]
+   :complies: std_wp__iso26262__management_656[version==1], std_req__aspice_40__iic-13-52[version==1], std_wp__iso26262__management_test[version==1]
 
    The module release note provides clarity what is included in the current version of the software
    module release. It shall indicate also the distinct changes to previous versions and provide
